@@ -8,11 +8,11 @@ app.use(express.json());
 
 app.get("/api",(req,res)=>{
     console.log("Hello World");
-    res.send("Hello World");
+    res.send("Testing API");
 });
 
 app.get("/api/hello",(req,res)=>{
-    res.send("Hello World");
+    res.send("Hello World Sonu");
 });
 
 app.listen(process.env.PORT, () => {
