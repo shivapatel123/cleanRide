@@ -10,7 +10,7 @@ pool.on('error', (err) => {
 });
 
 const tool = {
-  query: async (text, params) => await pool.query(text, params),
+  query: (text, params) => pool.query(text, params),
   pool,
 };
 
